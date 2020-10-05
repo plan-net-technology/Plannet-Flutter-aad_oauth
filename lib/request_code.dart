@@ -25,7 +25,7 @@ class RequestCode {
         Uri.encodeFull("${_authorizationRequest.url}?$urlParams"),
         clearCookies: _authorizationRequest.clearCookies, 
         hidden: false,  
-        rect: _config.screenSize
+        // rect: _config.screenSize
     );
 
     _webView.onUrlChanged.listen((String url) {
